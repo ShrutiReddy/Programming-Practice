@@ -2,7 +2,7 @@ package com.collections;
 
 import java.util.*;
 
-public class Assign1ArrayList {
+public class ArrayListFunctions {
 
 	public static void main(String[] args) {
 		// Creating an arraylist with elments of names in it

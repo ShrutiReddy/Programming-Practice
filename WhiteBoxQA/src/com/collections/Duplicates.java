@@ -2,7 +2,7 @@ package com.collections;
 
 import java.util.*;
 
-public class AssigB {
+public class Duplicates {
 
 
 	public static void main(String[] args) {
@@ -14,21 +14,27 @@ public class AssigB {
 			
 		}
 	
+	
 	//Second way to remove duplicates
-	HashSet<String> mySet = new HashSet<String>();
 	ArrayList<String>names = new ArrayList<String>();
+	HashSet<String> mySet = new HashSet<String>();
+	
 	names.add("Shruti");
 	names.add("sam");
 	names.add("Alex");
 	names.add("Bob");
-	names.add("John");
-	
+	names.add("Shruti");
+	System.out.println("Printing arrayList of names: ");
 	for(String s:names){
 		System.out.println(s);
 	}
 	mySet.addAll(names);
 	names.clear();
 	names.addAll(mySet);
+	System.out.println("Printing hashSet of names: ");
+	for(String s:names){
+		System.out.println(s);
+	}
 	
 	
 	}
